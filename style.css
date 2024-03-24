@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6em;
+    color: #414141;
+    line-height: 1.5;
+    font-weight: 200px;
+    
+}
+
+.section{
+    width: 80%;
+    margin: 6em auto;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.small-title{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+/* home section */
+#home{
+    background: linear-gradient(to top, rgba(49, 49, 49, 0.8),rgba(49, 49, 49, 0.8)),
+    url(./img/harvard.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    
+}
+
+.nav{
+    width: 80%;
+    height: 10%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 16px;
+    left: 0; 
+}
+
+.logo-icon{
+    color: #fbeb07;
+    font-size: 3.2em;
+    float: left;  
+}
+
+.logo-name{
+    font-size: 2.4em;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-left: 10px;    
+}
+
+.menu{
+    float: right; 
+    position: absolute;
+    top: 16px;
+    right: 0; 
+}
+
+.menu-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+    
+}
+
+.menu-list-item{
+    margin-left: 3em;
+}
+
+.menu-list-item a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.menu-list-item a:hover{
+    color: #fbeb07;
+}
+
+.menu-icon{
+    float: right;
+    font-size: 2.4em;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    visibility: hidden;
+}
+
+.menu-icon:hover{
+    color: #fbeb07;
+}
+
+.menu-close-icon{
+    visibility: hidden;
+}
+
+.hero{
+    margin-top:10%;
+}
+
+.hero-title{
+    font-size: 4.2em;
+    margin-bottom: 10px;
+}
+
+.hero-content{
+    width: 60%;
+    margin : 0 auto;
+    margin-bottom: 30px;
+}
+
+.visit-us{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 14px;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.visit-us:hover{
+    border-color: #fbeb07;
+    color: #fbeb07;
+}
+
+/* course section */
+.course-row{
+    margin-top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    gap: 2%;
+}
+
+.course-col{
+    flex-basis: 32%;
+    padding: 20px 10px;
+    background-color: #fbeb07;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.course-col h3{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+/* campus section */
+.campus-row{
+    margin-top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    gap: 2%;
+}
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.campus-col img{
+    width: 100%;
+    height: 35em;    
+}
+
+.layer{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.layer:hover{
+    background-color: hsl(56, 97%, 51%,0.7);
+}
+
+.layer h3{
+    font-size: 2.4em;
+    color: #fff;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity:1;   
+}
+
+
+/* facility section */
+
+.facility-row{
+    margin-top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    gap: 2%;
+}
+
+.facility-col{
+    flex-basis: 32%;
+    background-color: #fff;
+    border: 1px solid #eeecec;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 10px 20px #f0eded;
+}
+
+.facility-col img{
+    width: 100%;
+    height: 18em;    
+}
+
+.facility-content{
+    padding: 16px;
+}
+
+.facility-col h4{
+    text-transform: capitalize;
+   text-align: left;
+   margin-bottom: 10px;
+}
+
+.facility-col p{
+    text-align: left;
+}
+
+/* student say section */
+.student-row{
+    margin-top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    gap: 4%;
+}
+
+.student-col{
+    flex-basis: 48%;
+    background-color: #fbf062;
+    border: 1px solid #eeecec;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.student-col img{
+    width: 10%;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.student-content{
+    text-align: left;
+}
+
+.student-content p{
+    margin-bottom: 10px;
+}
+
+.student-content ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    margin-top: 10px;
+}
+
+/* about us section */
+.about-us-section{
+    margin-bottom: 40px;
+}
+#about_us p{
+    margin-top: 20px;
+    margin-bottom: 2em;
+}
+
+
+#about_us ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;  
+    justify-content: center;
+    align-items: center;
+}
+
+#about_us i{
+    color: #fbeb07;
+}
+
+   
+/* media query */
+@media (max-width:700px) {
+    html{
+        font-size: 7px;
+    }
+
+    /* home section */
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 65%;
+        background-color: #fbeb07;
+        height: 100vh;
+        width: 50%;
+        display: none;
+        transition: 1s ease-in;
+    }
+    .menu-list{
+        list-style: none;
+        display: flex;
+        flex-direction: column; 
+        align-items:flex-start; 
+        margin-top: 20%;    
+    }
+    
+    .menu-list-item{
+        border-bottom: 1px solid #fff;
+        width: 70%;
+        margin: 12px auto;
+    }
+    
+    .menu-list-item a{
+        color: #333;
+    }
+    
+    .menu-list-item a:hover{
+        color: #333;
+        font-weight: bold;
+    }
+
+    .menu-icon{
+        visibility: visible;
+    }
+
+    .menu-close-icon{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 24px;
+        color: #070012;
+        padding: 10px;
+    }
+
+    .hero{
+        margin-top:20%;
+    }
+
+    /* course section, campus section, facility section */
+    .course-col,.campus-col,.facility-col,.student-col{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+}
